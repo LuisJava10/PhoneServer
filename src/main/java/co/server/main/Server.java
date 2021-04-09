@@ -32,4 +32,11 @@ public class Server {
                     servicio = (DTOServicioTecnico) object;
                     comando = servicio.getComando();
                 }
+socketServer.close();
+            } catch (ClassNotFoundException | IOException e) {
+                e.printStackTrace();
+            }
+         
+        }
+    }
 } 
