@@ -18,13 +18,11 @@ import java.sql.SQLException;
 import modelos.ListaDoblementeEnlazadaGenerica;
 import utils.ComandosSql;
 
-/**
- *
- * @author Samuel
- */
-public class Server {
 
-    public static void main(String[] args) throws SQLException {
+public class Server {
+    // revisar
+
+    public static void main(String[] args) {
         //ServerSocket socketServer = null;
 
         while (true) {
