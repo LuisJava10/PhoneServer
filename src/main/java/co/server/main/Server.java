@@ -5,6 +5,8 @@
  */
 package co.server.main;
 
+import dao.DAOArticulo;
+import dao.DAOTecnico;
 import dto.DTOArticulo;
 import dto.DTOServicioTecnico;
 import java.io.IOException;
@@ -12,6 +14,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.sql.SQLException;
 import modelos.ListaDoblementeEnlazadaGenerica;
 import utils.ComandosSql;
 
@@ -20,8 +23,8 @@ import utils.ComandosSql;
  * @author Samuel
  */
 public class Server {
-        
-     public static void main(String[] args) {
+
+    public static void main(String[] args) throws SQLException {
         //ServerSocket socketServer = null;
 
         while (true) {
@@ -124,4 +127,4 @@ public class Server {
          
         }
     }
-} 
+}
